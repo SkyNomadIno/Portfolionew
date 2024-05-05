@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/csszasajtove.css">
+    <script src="https://kit.fontawesome.com/5133a64235.js" crossorigin="anonymous"></script>
+    <title>Web Design</title>
+</head>
+<body>
+<div id="header">
+    <div class="navigacija">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#services">Works</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div id="container">
+    <article>
+        <a href="https://skynomadino.github.io/Bushido/"><img src="../Images/bushidonaslovna.jpg">
+        </a>
+        <p>Bushido</p>
+    </article>
+    <article>
+        <a href="https://skynomadino.github.io/Tarot/"><img src="../Images/Tarotnaslovna.jpg"></a>
+        <p>Tarot</p>
+    </article>
+    <article>
+        <a href="https://skynomadino.github.io/Vegan-restaurant/"><img src="../Images/veganisimonaslovna.jpg"></a>
+        <p>Vegan Restaurant</p>
+    </article>
+    <article>
+        <a href="https://skynomadino.github.io/Makeup/"><img src="../Images/makeupnaslovna.jpg"></a>
+    </article>
+    <p>Makeup</p>
+    <article>
+        <a href="https://skynomadino.github.io/Architect/"><img src="../Images/arhitekstanslovna.jpg"></a>
+    </article>
+    <p>Architect</p>
+    <article>
+        <a href="https://skynomadino.github.io/Rumi/"><img src="../Images/ruminaslovna.jpg"></a>
+    </article>
+    <p>Rumi</p>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h2 class="sub-title">You can find me here:</h2>
+
+                <div class="social-icons">
+                    <a href="mailto:inona.zivanovic@yahoo.com"><i class="fab fa-yahoo"></i></a>
+                    <a href="http://instagram.com/SkyNomadphoto"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/inona-z-54a819aa/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <i class="fa-solid fa-cog fa-spin"></i>
+        <i class="fa-solid fa-frog"></i>
+        <i class="fa-solid fa-cog fa-spin" style="--fa-animation-direction: reverse;"></i>
+    </div>
+    <p id="tagline">Made with love in a far, far away galaxy...</p>
+</div>
+
+
+<script>
+    const bodyEl = document.querySelector("body")
+    bodyEl.addEventListener("mousemove", (event) => {
+        const xPos = event.offsetX;
+        const yPos = event.offsetY;
+        const spanEl = document.createElement("span");
+        spanEl.style.left = xPos + "px";
+        spanEl.style.top = yPos + "px";
+        const size = Math.random() * 20;
+        spanEl.style.width = size + "px";
+        spanEl.style.height = size + "px";
+        bodyEl.appendChild(spanEl);
+        setTimeout(() => {
+            spanEl.remove();
+        }, 6000);
+    });
+    src = "index.js";
+</script>
+
+</body>
+</html>

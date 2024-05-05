@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stil.css">
+    <script src="https://kit.fontawesome.com/5133a64235.js" crossorigin="anonymous"></script>
+    <title>Design</title>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#services">Works</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="container">
+            <video width="520" height="auto" controls src="../Images/cirkus brzi.mp4"></video>
+            <p>After Effects, Circus</p>
+            <img src="../Design/Frivica.png" alt="Frida, Vincent and their baby">
+            <p>Photoshop, Frida, Vincent and their baby Frivi Kahlo van Gogh holding Pepa Pig plush toy</p>
+            <video width="520" height="auto" controls src="../Images/Zvezdana Noc sa mrakom.mp4"></video>
+            <p>After Effects, Starry Night, Van Gogh</p>
+            <img src="../Design/IMG_20220408_222308_816.jpg" alt="Steampunk">
+            <p>Photoshop, Steampunk</p>
+            <video width="520" height="auto" controls src="../Images/carobnica.mp4"></video>
+            <p>After Effects, Magician</p>
+            <img src="../Design/enterijer.jpg" alt="Interior">
+            <p>Photoshop, Interior</p>
+            <img src="../Images/bushido.jpg" alt="Bushido brochure">
+            <p>InDesign, Bushido brochure, front side</p>
+            <img src="../Images/bushido2.jpg" alt="Bushido brochure">
+            <p>InDesign, Bushido brochure, backside</p>
+            <img src="../Images/Bushido brosura.jpg" alt="">
+            <p>InDesign, Bushido brochure mockup</p>
+            <img src="../Design/Indija magazin.png" alt="InDesign">
+            <p>InDesign, magazine page</p>
+            <img src="../Design/Jerusalim.jpg" alt="Jerusalem">
+            <p>Photoshop, Jerusalem</p>
+            <img src="../Design/know.jpg" alt="Know Yourself, Youth Festival poster">
+            <p>Photoshop, Youth Festival poster</p>
+            <img src="../Design/Layer 0.jpg" alt="Photoshop">
+            <p>Photoshop, Protection</p>
+            <img src="../Design/policija.jpg" alt="Illustartor, Character Design">
+            <p>Illustrator, character design</p>
+            <img src="../Design/krozprozor.jpg" alt="Collage">
+            <p>Collage, Through the Window</p>
+            <img src="../Design/Dobro _ lose.jpg" alt="Collage">
+            <p>Collage, Opposites</p>
+            <img src="../Design/Mockup za reklamni oglas JPG.jpg" alt="Photoshop, Plazma biscuit">
+            <p>Photoshop, Plazma biscuit advertisement for magazine</p>
+            <img src="../Images/Reklamni oglas JPG.jpg" alt="Plazma">
+            <p>Photoshop, Plazma biscuits </p>
+            <br>
+            <br>
+            <br>
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h2 class="sub-title">You can find me here:</h2>
+                            <div class="social-icons">
+                                <a href="mailto:inona.zivanovic@yahoo.com"><i class="fab fa-yahoo"></i></a>
+                                <a href="http://instagram.com/SkyNomadphoto"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/inona-z-54a819aa/"><i
+                                        class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <i class="fa-solid fa-cog fa-spin"></i>
+                    <i class="fa-solid fa-frog"></i>
+                    <i class="fa-solid fa-cog fa-spin" style="--fa-animation-direction: reverse;"></i>
+                </div>
+                <p id="tagline">Made with love in a far, far away galaxy...</p>
+            </div>
+        </div>
+</body>
+
+
+<script>
+    const bodyEl = document.querySelector("body")
+    bodyEl.addEventListener("mousemove", (event) => {
+        const xPos = event.offsetX;
+        const yPos = event.offsetY;
+        const spanEl = document.createElement("span");
+        spanEl.style.left = xPos + "px";
+        spanEl.style.top = yPos + "px";
+        const size = Math.random() * 20;
+        spanEl.style.width = size + "px";
+        spanEl.style.height = size + "px";
+        bodyEl.appendChild(spanEl);
+        setTimeout(() => {
+            spanEl.remove();
+        }, 6000);
+    });
+    src = "index.js";
+</script>
+
+
+</html>

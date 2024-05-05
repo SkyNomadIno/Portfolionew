@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stil.css">
+    <script src="https://kit.fontawesome.com/5133a64235.js" crossorigin="anonymous"></script>
+    <title>Photography</title>
+</head>
+<style>
+img {max-width: 400px;
+margin-right: 20px;
+margin-left: 20px;
+float: left;
+}
+
+#container {
+display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact {clear: both;}
+
+@media only screen and (max-width: 600px){
+  img {
+    padding: 1px;
+    width: 100%;
+  }
+@media screen and (max-width: 1024px){
+  img {
+    max-width: 400px;
+  }  
+#container{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+  
+  } }
+
+
+</style>
+<body>
+    <span></span>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="../index.html">About</a></li>
+                    <li><a href="../index.html#services">Works</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div id="container">
+            <img src="../Images/Pera.jpg" alt="Pera">
+            <img src="../Images/stepenice.png" alt="stairs">
+            <img src="../Images/baloncici1 (2).jpg" alt="Bubbles">
+            <img src="../Images/pomorandza.png" alt="Orange">
+            <img src="../Images/grodjze.png" alt="Grapes">
+            <img src="../Images/3.jpg" alt="Wedding">
+            <img src="../Images/1.jpg" alt="Church">
+            <img src="../Images/2.jpg" alt="Wedding">
+           
+            <img src="../Images/7.jpg" alt="Church">
+            <img src="../Images/5.jpg" alt="">
+            <img src="../Images/17.jpg" alt="Ruins">
+            <img src="../Images/golub.jpg" alt="Pigeon">
+            <img src="../Images/pero.jpg" alt="Feather">
+            <img src="../Images/gavranovi.jpg" alt="Crows">
+            <img src="../Images/sto.jpg" alt="Table">
+            <img src="../Images/zima.jpg" alt="Winter idila">
+            <img src="../Images/kalemegdan.jpg" alt="Kalemegdan Fortress">
+            <img src="../Images/egipat.jpg" alt="Sunset">
+            <img src="../Images/NKN_2236-2.jpg" alt="Veggies">
+            <img src="../Images/paprika.jpg" alt="pepper">
+            <img src="../Images/nebo.jpg" alt="Sky">
+            <img src="../Images/nebo12.jpg" alt="Sky">
+            <img src="../Images/NKN_2860.jpg" alt="Sky">
+            <img src="../Images/mesec29.9.23.jpg" alt="Moon">
+            <img src="../Images/svetlo.jpg" alt="Light">
+            <img src="../Images/NKN_2690-3 - Copy.jpg" alt="Portrait">
+            <img src="../Images/viking.jpg" alt="Viking">
+            <img src="../Images/NKN_4744.jpg" alt="Portrait">
+            <img src="../Images/maglanova1.png" alt="Fog">
+            <img src="../Images/DSC_1884.jpg" alt="Qatar Airways">
+            <img src="../Images/svadba.jpg" alt="Happines, Wedding">
+            <img src="../Images/portret3.jpg" alt="Portrait">
+           
+          
+            <img src="../Images/Micika.jpg" alt="Portrait">
+            <img src="../Images/portret1.jpg" alt="Portrait">
+            <img src="../Images/DSC_0083.jpg" alt="Architecture">
+            <img src="../Images/NKN_3690.jpg" alt="Street Washing">
+            <img src="../Images/spomenik.jpg" alt="Stone">
+            <img src="../Images/NKN_4790.jpg" alt="Crow">
+            <img src="../Images/DSC_0505.jpg" alt="Portrait">
+            <img src="../Images/DSC_0533.jpg" alt="Architecture">
+            <img src="../Images/DSC_1924.jpg" alt="Street Seller">
+            <img src="../Images/DSC_1011.jpg" alt="Architecture">
+            
+            <img src="../Images/klovnic.jpg" alt="Clown">
+        </div>
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h2 class="sub-title">You can find me here:</h2>
+
+                        <div class="social-icons">
+                            <a href="mailto:inona.zivanovic@yahoo.com"><i class="fab fa-yahoo"></i></a>
+                            <a href="http://instagram.com/SkyNomadphoto"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/inona-z-54a819aa/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <i class="fa-solid fa-cog fa-spin"></i>
+                <i class="fa-solid fa-frog"></i>
+                <i class="fa-solid fa-cog fa-spin" style="--fa-animation-direction: reverse;"></i>
+            </div>
+            <p id="tagline">Made with love in a far, far away galaxy...</p>
+        </div>
+    </div>
+
+    <script>
+        const bodyEl = document.querySelector("body")
+        bodyEl.addEventListener("mousemove", (event) => {
+            const xPos = event.offsetX;
+            const yPos = event.offsetY;
+            const spanEl = document.createElement("span");
+            spanEl.style.left = xPos + "px";
+            spanEl.style.top = yPos + "px";
+            const size = Math.random() * 20;
+            spanEl.style.width = size + "px";
+            spanEl.style.height = size + "px";
+            bodyEl.appendChild(spanEl);
+            setTimeout(() => {
+                spanEl.remove();
+            }, 6000);
+        });
+        src = "index.js";
+    </script>
+
+
+
+</body>
+
+</html>
