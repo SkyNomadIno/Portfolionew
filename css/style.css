@@ -364,6 +364,20 @@ nav .fas{
     margin-left: -30px;
 }
 
+
+.ime p{
+    font-size: 1rem;
+}
+
+.unicorn{
+    font-size: 1rem;
+}
+
+h2.sub-title{
+    font-size: 1rem;
+    margin-top: 20%;
+}
+    
 nav ul li{
     display: block;
     margin: 25px;
