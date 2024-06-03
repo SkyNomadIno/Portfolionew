@@ -364,6 +364,7 @@ h1{
 .ime p{
     font-size: 1rem;
     margin-top: -40px;
+    font-style: italic;
 }
 
 .unicorn{
