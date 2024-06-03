@@ -114,14 +114,14 @@ html{
     nav ul li a:hover::after{
         width: 100%;
     }
- nav ul li a{
+ ul#sidemenu a{
   font-family: "Kolker Brush", cursive;
   text-decoration: none;
   font-size: 3rem;
   transition: 0.2s;
 }
 
-nav ul li a:hover{
+ul#sidemenu a:hover{
   color: #eb08aa;
   transform: scale(1.3);
 }
