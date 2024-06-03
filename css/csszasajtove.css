@@ -114,7 +114,7 @@ html{
     nav ul li a:hover::after{
         width: 100%;
     }
-    nav ul li a{
+ nav ul li a{
   font-family: "Kolker Brush", cursive;
   text-decoration: none;
   font-size: 3rem;
